@@ -1,0 +1,2 @@
+export const CARD_IMAGEURL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+export const REST_MENU = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.6371353&lng=77.0845064&restaurantId=";
