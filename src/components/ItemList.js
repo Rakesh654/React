@@ -5,12 +5,10 @@ const ItemList = ({items}) =>{
     const cartActions = useDispatch();
     const {name, description, imageId, price} = items.card?.info;
     const addCart = () =>{
-        console.log(items);
-        debugger
         cartActions(addItems(items));
     }
     return (
-    <div className="border-gray-300 border-b-2 my-4 flex justify-between">
+    <div data-testid="menuItem" className="border-gray-300 border-b-2 my-4 flex justify-between">
         <div className="text-left">
             <span className="font-semibold">{name} -₹{price/100}</span>
             <p className="text-s text-left">{description}</p>

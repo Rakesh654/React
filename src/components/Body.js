@@ -35,7 +35,7 @@ if(listOfRestaurent.length == 0) return <Shimmer/>
 return( 
     <div className="body">
             <div className="m-4 p-4">
-              <input type="text" className="border border-solid border-black" value={searchInputtext} onChange={(e)=> {
+              <input data-testid="search" type="text" className="border border-solid border-black" value={searchInputtext} onChange={(e)=> {
                 setsearchInputtext(e.target.value);
               }}></input>
               <button className="bg-green-300 rounded-lg px-4 py-2 m-4 text-white" onClick={() => {
@@ -55,7 +55,7 @@ return(
             <div className="flex flex-wrap">
             {
                 listOfRestaurent.map(res => 
-                    (<Link key={res.info.id} to={"/restaurents/" + res.info.id}><RestaurentCard  restData={res.info}></RestaurentCard></Link>)
+                    (<Link key={res.info.id} to={"/restaurents/" + res.info.id}><RestaurentCard restData={res.info}></RestaurentCard></Link>)
                 )
             }   
             </div>

@@ -12,7 +12,8 @@ const Header = () =>{
     return (
         <div className="flex justify-between pink">
             <div className="logo-container">
-            <img className="w-48" alt="no Image" src={require("../../assets/ReactChef.png")}></img>
+            {/* <img className="w-48" alt="no Image" src={require("../../assets/ReactChef.png")}></img> */}
+            <img className="w-48" alt="no Image" src="https://tse4.mm.bing.net/th?id=OIP.ueHppfRf52CDn841Rpj8IwHaHa&pid=Api&P=0&h=220"></img>
             </div>
             <div className="flex items-center">
                 <ul className="flex p-4 m-4">
